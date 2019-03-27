@@ -3,7 +3,7 @@ import 'package:video_game_catalog/models/game.dart';
 import 'package:video_game_catalog/pages/game_detail.dart';
 
 class GameCover extends StatelessWidget {
-  static const COVER_RATIO = 0.65;
+  static const COVER_RATIO = 0.7;
   final Game game;
   final double height;
 
@@ -28,7 +28,8 @@ class GameCover extends StatelessWidget {
     return InkWell(
       onTap: () => _showGameDetail(context),
       child: Material(
-        borderRadius: BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(4.0),
+        clipBehavior: Clip.antiAlias,
         elevation: 2.0,
         child: Image.network(
           game.url,

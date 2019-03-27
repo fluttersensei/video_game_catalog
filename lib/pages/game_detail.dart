@@ -22,7 +22,7 @@ class _GameDetailState extends State<GameDetail> {
           children: <Widget>[
             GameCover(
               widget.game,
-              height: 250,
+              height: 230,
             ),
             Padding(
               padding: const EdgeInsets.all(12.0),
